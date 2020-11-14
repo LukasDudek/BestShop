@@ -26,10 +26,13 @@ body {
     width: 1352px;
 }
 
+/* belka */
+
 .header {
     width: 100%;
     height: 70px;
     box-shadow: #00000029 0px 3px 6px;
+    position: sticky;
 }
 .bar {
     height: 100%;
@@ -51,7 +54,7 @@ body {
 font-size: 0.6875rem;
 text-decoration: none;
 letter-spacing: 3.28px;
-line-height: 15;
+line-height: 15px;
 text-align: center;
 text-transform: uppercase;
 color: var(--color-gray);
@@ -67,3 +70,149 @@ border-bottom: 4px solid transparent;
  .nav_element {
      padding: 0px 47px;
  }
+
+ /* strona powitalna */
+
+ .welcome-page {
+     height: 712px;
+ }
+ .welcome-page img{
+    max-width: 100%;
+    height: auto;
+    object-position: bottom;
+}
+ .container_welcome {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 160px;
+ }
+ .welcome_tittle {
+     font-family: var(--font-raleway);
+     font-size: 3.063rem;
+     text-align: center;
+     line-height: 57px;
+     color: var(--color-black);
+     padding-bottom: 20px;
+ }
+
+ .welcome_text {
+     font-size: 1rem;
+     text-align: center;
+     line-height: 22px;
+     color: var(--color-black);
+     padding-bottom: 38px;
+ }
+
+ .btn {
+     border-radius: 40px;
+     background-color: var(--color-primary);
+     text-decoration: none;
+     color: var(--color-white);
+     font-size: 1rem;
+     text-align: center;
+     line-height: 22px;
+     padding: 22px 157px;
+     font-weight: bold;
+ }
+
+ /* sekcja statystyki */
+
+ .statistic {
+     width: 100%;
+     height: 531px;
+     background-color: var(--color-white);
+     box-shadow: #00000029;
+ }
+ .statistic_tittle {
+     font-family: var(--font-raleway);
+     font-size: 2.25rem;
+     text-align: center;
+     line-height: 42px;
+     color: var(--color-black);
+     margin: 100px 0px;
+ }
+ .statistic_container {
+     display: flex;
+     justify-content: center;
+ }
+ .statistic > .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+ .container > .statistic_container {
+     width: 1100px;
+     display: flex;
+     justify-content: space-around;
+ }
+
+ .statistic_column {
+     text-align: center;
+     object-position: center;
+     display: flex;
+     flex-direction: column;
+     height: auto;
+     /* justify-content: space-around; */
+     position: relative;
+ }
+
+  .svg_stat { /* wycentrowanie samego svg */
+    display: block;
+    height: auto;
+    width: auto;
+    position:static;
+    padding-bottom: 15px;
+    z-index: 1;
+ }
+ /* stylowanie kolka do svg */
+
+ .circle_stat {
+     width: 60px;
+     height: 60px;
+     border-radius: 50%;
+     background-color: var(--color-redish);
+     
+ }
+
+ .circle_person {
+    background-color: var(--color-redish);
+    position: absolute;
+    top: 0px;
+    left: 4px;
+ }
+ .circle_eye {
+    background-color: var(--color-primary);
+    position: absolute;
+    top: -3px;
+    left: 5px;
+    
+ }
+ .circle_catalog {
+    background-color: var(--color-green);
+    position: absolute;
+    top: -6px;
+    left: -5px;
+ }
+ 
+.eye {
+    margin-top: 13px;
+}
+.stat_column_text1 {
+    margin-bottom: 15px;
+    margin-top: 10px;
+    color: var(--color-black);
+    letter-spacing: 6px;
+    text-align: center;
+    line-height: 24px;
+    font-weight: bold;
+
+
+}
+
+.stat_column_text2 {
+    color: var(--color-gray);
+
+}
+

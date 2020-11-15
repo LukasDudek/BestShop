@@ -49,7 +49,16 @@ body {
     font-family: var(--font-raleway);
     text-decoration: none;
 }
-
+.logo:hover {
+    transform: scale(1.5);
+    transition: 0.5s;
+    padding: 0px 0px;
+    border: none;
+    border-radius: 50%;
+    box-shadow: #15759ba2 0px -5px 50px 10px;
+    background-color: #72b3cc52 ;
+    line-height: 1px;
+}
 .nav_link {
 font-size: 0.6875rem;
 text-decoration: none;
@@ -115,6 +124,10 @@ border-bottom: 4px solid transparent;
      padding: 22px 157px;
      font-weight: bold;
  }
+ .btn:hover {
+    transform: scale(1.5);
+    transition: 0.7s;
+}
 
  /* sekcja statystyki */
 
@@ -225,6 +238,9 @@ border-bottom: 4px solid transparent;
     background-color: var(--color-light-grey);
     height: 1395px;
     padding: 100px 0px 100px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .box {
@@ -361,12 +377,13 @@ border-bottom: 4px solid transparent;
 }
 .box3 {
     display: flex;
+    justify-content: space-between;
+    width: 1124px;
 }
 .box-texts3 {
     width: 623.04px;
     height: 370px;
     background-color: var(--color-white);
-    margin-left: 251px;
     border-radius: 5px;
     border: #E8E9ED 1px solid;
     padding: 69px 34px 70px 36px;
@@ -396,6 +413,7 @@ border-bottom: 4px solid transparent;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 150px;
 }
 .container-price {
     width: 1266px;
@@ -418,7 +436,7 @@ border-bottom: 4px solid transparent;
 .price-blocks {
     display: flex;
     justify-content: space-evenly;
-    margin-bottom: 150px;
+    
 }
 
 .basic, .profesional, .premium {
@@ -504,3 +522,153 @@ border-bottom: 4px solid transparent;
 .begin-btn3 {
     background-color: #55DFB4;
 }
+
+/* section contact */
+.contact {
+    display: flex;
+    justify-content: center;
+
+}
+.contact-container {
+    width: 896px;
+    height: 376px;
+    margin-bottom: 59px;
+    display: flex;
+}
+
+.information-contact {
+    width: 50%;
+}
+.form-container {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-tittle {
+    font-size: 3.063rem;
+    line-height: 57px;
+    font-family: var(--font-raleway); 
+    margin-bottom: 22px;
+}
+.contact-text {
+    font-size: 1rem;
+    line-height: 22px;
+    margin-bottom: 42px;
+}
+.mail-and-number {
+    font-weight: 600;
+    font-size: 1rem;
+    line-height: 22px;
+    color: var(--color-gray);
+}
+.name {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.mail {
+    display: flex;
+    flex-direction: column;
+}
+.style-labes {
+    font-weight: bold;
+    font-size: 0.688rem;
+    letter-spacing: 3.28px;
+    line-height: 15px;
+    color: var(--color-primary);
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+.style-inputs {
+    border: none;
+    border-bottom: 1px solid var(--color-gray);
+    margin-bottom: 25px;
+}
+.style-inputs::placeholder {
+    font-style: italic;
+    color:#22739138;
+    font-size: 0.9rem;
+}
+
+.form-checkbox input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+.form-checkbox {
+    cursor: pointer;
+    display: flex;
+}
+.checkbox {
+    height: 24px;
+    flex-basis: 24px;
+    flex-shrink: 0;
+    border: 1px solid #95989A;
+    border-radius: 4px;
+    background-color: var(--color-white);
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.form-checkbox input:checked + .checkbox{
+    background: url(../assets/Checkmark.svg) no-repeat center;
+}
+
+.agree-text {
+    font-size: 0.75rem;
+    color: #707070;
+    line-height: 17px;
+    margin-bottom: 40px;
+}
+
+.form-btn {
+    align-self: flex-end;
+    color: var(--color-white);
+    border: none;
+    border-radius: 35px;
+    background-color: var(--color-primary);
+    box-shadow: #07ACE629 5px 10px 14px;
+    padding: 20px 97px;
+}
+
+.form-btn:hover {
+    transform: scale(1.2);
+    transition: 0.7s;
+}
+
+.mail-and-number img:hover {
+    transform: scale(1.8) rotateZ(45deg);
+    transition: 0.2s;
+}
+/* footer */
+
+.footer {
+    height: 89px;
+    box-shadow: #00000029 0px -5px 40px;
+}
+.foot {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 89px;
+    
+}
+.logo-footer {
+    font-size: 1.625rem;
+    line-height: 30px;
+    color: var(--color-primary);
+    /* font-size: 2rem; 2x16px */
+    font-family: var(--font-raleway);
+    text-decoration: none;
+}
+.copy-footer {
+    font-size: 0.688rem;
+    color: var(--color-gray);
+    line-height: 15px;
+}
+
+

@@ -83,12 +83,15 @@ border-bottom: 4px solid transparent;
  /* strona powitalna */
 
  .welcome-page {
-     height: 712px;
+     height: auto;
+     display: flex;
+    flex-direction: column;
  }
  .welcome-page img{
-    max-width: 100%;
+    max-width: 1626px;
     height: auto;
     object-position: bottom;
+    align-self: center;
 }
  .container_welcome {
     display: flex;
@@ -652,8 +655,9 @@ border-bottom: 4px solid transparent;
 }
 .foot {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    /* flex-direction: column; */
+    justify-content: space-between;
+    align-items: center;
     height: 89px;
     
 }
@@ -671,4 +675,14 @@ border-bottom: 4px solid transparent;
     line-height: 15px;
 }
 
+.icons-box-footer a {
+    width: 24px;
+    height: 24px;
+    margin-left: 20px;
+}
+
+.icons-box-footer img:hover {
+    transform: scale(1.5);
+    transition: 0.6s;
+}
 

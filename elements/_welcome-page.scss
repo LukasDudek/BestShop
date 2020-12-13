@@ -1,0 +1,66 @@
+.welcome-page {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.welcome-page{
+    .background {
+    background-image: url(../assets/Background.png);
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-top: 50px;
+    }
+    @include notebook {
+        .background {
+            height: 50%;
+            width: 100%;
+            }
+    }
+    @include mobile {
+        .background {
+            height: 40%;
+            width: 100%;
+            }
+    }
+}
+.container_welcome {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   margin-top: 90px;
+}
+.welcome_tittle {
+    font-family: $font-raleway;
+    font-size: 3.063rem;
+    text-align: center;
+    line-height: 57px;
+    color: $color-black;
+    padding-bottom: 20px;
+}
+
+.welcome_text {
+    font-size: 1rem;
+    text-align: center;
+    line-height: 22px;
+    color: $color-black;
+    padding-bottom: 38px;
+}
+
+.btn {
+    border-radius: 40px;
+    background-color: $color-primary;
+    text-decoration: none;
+    color: $color-white;
+    font-size: 1rem;
+    text-align: center;
+    line-height: 22px;
+    padding: 22px 157px;
+    font-weight: bold;
+}
+.btn:hover {
+   transform: scale(1.5);
+   transition: 0.7s;
+}

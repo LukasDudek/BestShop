@@ -1,0 +1,120 @@
+.statistic {
+    width: 100%;
+    height: 531px;
+    background-color: $color-white;
+    box-shadow: #00000029;
+    
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+        .statistic_tittle {
+            font-family: $font-raleway;
+            font-size: 2.25rem;
+            text-align: center;
+            line-height: 42px;
+            color: $color-black;
+            margin: 100px 0px;
+            @include mobile {
+                margin-top: 10px;
+                margin-bottom: 50px;
+            }
+        }
+        
+     }
+     @include mobile {
+        height: 100%;
+     }
+}
+
+.statistic_container {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+   
+    // .statistic_container {
+    //     display: flex;
+    //     justify-content: center;
+    // }
+    .statistic_column {
+        text-align: center;
+        object-position: center;
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        /* justify-content: space-around; */
+        position: relative;
+        .circle_stat {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background-color: $color-redish;  
+        }
+        .circle_person {
+            background-color: $color-redish;
+            position: absolute;
+            top: 0px;
+            left: 4px;
+         }
+         .svg_stat { /* wycentrowanie samego svg */
+            display: block;
+            height: auto;
+            width: auto;
+            position:static;
+            padding-bottom: 15px;
+            z-index: 1;
+         }
+         .stat_column_text1 {
+            margin-bottom: 15px;
+            margin-top: 10px;
+            color: $color-black;
+            letter-spacing: 6px;
+            text-align: center;
+            line-height: 24px;
+            font-weight: bold;
+         }
+         .stat_column_text2 {
+            color: $color-grey;
+         }
+    }
+    @include mobile {
+        flex-direction: column;
+        margin: 0 auto 50px;
+        align-items: center;
+        .statistic_column {
+            margin-bottom: 30px;
+        }
+    }
+}
+
+
+
+
+
+/* stylowanie kolka do svg */
+
+
+
+
+.circle_eye {
+   background-color: $color-primary;
+   position: absolute;
+   top: -3px;
+   left: 12px;
+   
+}
+.circle_catalog {
+   background-color: $color-green;
+   position: absolute;
+   top: -6px;
+   left: -5px;
+}
+
+.eye {
+   margin-top: 13px;
+}
+
+.statistic_column:hover .stat_column_text1 {
+   transform: scale(2.5);
+   transition: 0.5s; }

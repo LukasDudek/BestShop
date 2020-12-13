@@ -1,0 +1,110 @@
+.pricing {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 150px;
+    .container-price {
+        width: 1266px;
+        height: 616px;
+        margin-top: 100px;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        .pricing-main-tittle {
+            font-size: 2.25rem;
+            font-family: $font-raleway;
+            color: $color-black;
+            line-height: 42px;
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        .price-blocks {
+            display: flex;
+            justify-content: space-evenly;
+            .basic, .profesional, .premium {
+                width: 372px;
+                height: 461px;
+                border: #FB3B64 1px solid;
+                border-radius: 18px;
+                display: flex;
+                justify-content: space-between;
+                flex-direction: column;
+                align-items: center;
+            }
+            .profesional {
+                border: $color-primary 1px solid;
+                .price2 {
+                    color: #07ACE6;
+                }
+                .begin-btn2 {
+                    background-color: #07ACE6;
+                }
+            }
+            .premium {
+                border: $color-green 1px solid;
+                .price3 {
+                    color: #55DFB4;
+                }
+                .begin-btn3 {
+                    background-color: #55DFB4;
+                }
+            }
+        }
+    }
+}
+.tittle-block {
+    margin-top: 34px;
+    font-size: 1.25rem;
+    line-height: 1px;
+    font-family: $font-raleway;
+    font-weight: bold;
+}
+.price {
+    margin-top: 14px;
+    color: #FB3B64;
+    font-size: 2.875rem;
+    line-height: 2px;
+}
+.limited-offer {
+    font-family: $font-raleway;
+    font-size: 0.75rem;
+    line-height: 1px;
+    font-weight: bold;
+    margin-top: 5px;
+}
+.HDD {
+    margin-top: 69px;
+}
+.HDD2 {
+    margin-top: 25px;
+}
+.begin-btn {
+    border-radius: 23px;
+    padding: 16px 57px;
+    color: $color-white;
+    background-color: #EB476E;
+    position: relative;
+    bottom: -25px;
+    text-decoration: none;
+}
+
+.basic:hover {
+    box-shadow: #eb4a0a79 5px 10px 27px;
+    transform: scale(1.1);
+}
+
+.profesional:hover {
+    box-shadow: #07ACE629 5px 10px 27px;
+    transform: scale(1.1);
+}
+
+.premium:hover {
+    box-shadow: #1cb63d29 5px 10px 27px;
+    transform: scale(1.1);
+}
+
+.begin-btn:hover {
+    transform: scale(1.5);
+    box-shadow: #b8b9b5f1 0px 0px 12px;
+}
+

@@ -59,7 +59,7 @@
                 .begin-btn2 {
                     background-color: #07ACE6;
                     position: relative;
-                    top: 38px;
+                    top: 17px;
                     left: 12px;
                     @include mobile {
                         top: 7px;
@@ -76,11 +76,11 @@
                 .begin-btn3 {
                     background-color: #55DFB4;
                     position: relative;
-                    top: 31px;
+                    top: 9px;
                     left: 14px;
                     @include mobile {
                         top: 10px;
-                        left: -68px;
+                        left: -82px;
                     }
                 }
             }
@@ -94,9 +94,16 @@
     justify-content: space-between;
     align-items: center;
     margin-bottom: 6%;
+    @include mobile {
+        margin-right: 5%;
+        width: 50%;
+    }
 }
 .offerrs {
     height: auto;
+    @include mobile {
+        width: 50%;
+    }
     p {
         margin-bottom: 15%;
         font-size: 1.3rem;
@@ -147,27 +154,27 @@
     background-color: #EB476E;
     text-decoration: none;
     position: relative;
-    top: 23px;
+    top: 15px;
     left: 5px;
     @include mobile {
         top: 6px;
-        left: -41px;
+        left: -82px;
     }
 }
 
 .basic:hover {
     box-shadow: #eb4a0a79 5px 10px 27px;
-    transform: scale(1.1);
+    transform: scale(1.2);
 }
 
 .profesional:hover {
     box-shadow: #07ACE629 5px 10px 27px;
-    transform: scale(1.1);
+    transform: scale(1.2);
 }
 
 .premium:hover {
     box-shadow: #1cb63d29 5px 10px 27px;
-    transform: scale(1.1);
+    transform: scale(1.2);
 }
 
 .begin-btn:hover {

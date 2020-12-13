@@ -2,34 +2,54 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 150px;
+    margin-bottom: 1%;
+    @include mobile {
+        margin-bottom: 5%;
+    }
     .container-price {
         width: 1266px;
         height: 616px;
         margin-top: 100px;
         display: flex;
-        justify-content: space-between;
         flex-direction: column;
+        @include mobile {
+            width: 80%;
+            height: auto;
+        }
         .pricing-main-tittle {
-            font-size: 2.25rem;
+            font-size: 3.8rem;
             font-family: $font-raleway;
             color: $color-black;
             line-height: 42px;
             text-align: center;
             margin-bottom: 50px;
+            @include mobile {
+                font-size: 4.25rem;
+            }
         }
         .price-blocks {
             display: flex;
             justify-content: space-evenly;
+            @include mobile {
+                align-items: center;
+                flex-direction: column;
+            }
             .basic, .profesional, .premium {
-                width: 372px;
-                height: 461px;
+                width: 80%;
+                height: auto;
                 border: #FB3B64 1px solid;
                 border-radius: 18px;
                 display: flex;
-                justify-content: space-between;
+                // justify-content: space-between;
                 flex-direction: column;
                 align-items: center;
+                margin-right: 10%;
+                @include mobile {
+                    margin-right: 0;
+                    flex-direction: row;
+                    justify-content: space-evenly;
+                    margin-bottom: 20%;
+                }
             }
             .profesional {
                 border: $color-primary 1px solid;
@@ -38,42 +58,84 @@
                 }
                 .begin-btn2 {
                     background-color: #07ACE6;
+                    position: relative;
+                    top: 38px;
+                    left: 12px;
+                    @include mobile {
+                        top: 7px;
+                        left: -88px;
+                    }
                 }
             }
             .premium {
                 border: $color-green 1px solid;
+                margin-right: 0;
                 .price3 {
                     color: #55DFB4;
                 }
                 .begin-btn3 {
                     background-color: #55DFB4;
+                    position: relative;
+                    top: 31px;
+                    left: 14px;
+                    @include mobile {
+                        top: 10px;
+                        left: -68px;
+                    }
                 }
             }
         }
     }
 }
+.price-content {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 6%;
+}
+.offerrs {
+    height: auto;
+    p {
+        margin-bottom: 15%;
+        font-size: 1.3rem;
+        img {
+            transform: scale(1.7);
+            margin-bottom: 2%;
+        }
+    }
+}
 .tittle-block {
     margin-top: 34px;
-    font-size: 1.25rem;
-    line-height: 1px;
+    font-size: 2rem;
+    line-height: normal;
     font-family: $font-raleway;
     font-weight: bold;
+    @include mobile {
+        margin-top: 0;
+        font-size: 1.7rem;
+    }
 }
 .price {
     margin-top: 14px;
     color: #FB3B64;
-    font-size: 2.875rem;
-    line-height: 2px;
+    font-size: 3.875rem;
+    line-height: normal;
+    @include mobile {
+        margin-top: 0;
+        margin-bottom: 10px;
+    }
 }
 .limited-offer {
     font-family: $font-raleway;
-    font-size: 0.75rem;
+    font-size: 1.2rem;
     line-height: 1px;
     font-weight: bold;
     margin-top: 5px;
 }
 .HDD {
-    margin-top: 69px;
+    margin-top: 25px;
 }
 .HDD2 {
     margin-top: 25px;
@@ -83,9 +145,14 @@
     padding: 16px 57px;
     color: $color-white;
     background-color: #EB476E;
-    position: relative;
-    bottom: -25px;
     text-decoration: none;
+    position: relative;
+    top: 23px;
+    left: 5px;
+    @include mobile {
+        top: 6px;
+        left: -41px;
+    }
 }
 
 .basic:hover {

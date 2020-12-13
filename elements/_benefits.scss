@@ -1,6 +1,6 @@
 .benefits {
     background-color: $color-light-grey;
-    height: 1395px;
+    height: auto;
     padding: 100px 0px 100px 0px;
     display: flex;
     flex-direction: column;
@@ -16,15 +16,27 @@
         align-items: center;
         justify-content: space-between;
         padding: 37px;
+        @include mobile {
+            width: 80%;
+            height: 100%;
+            flex-direction: column-reverse;
+            margin: 0px 5% 50px 5%;
+        }
         .box-texts {
             max-width: 416px;
             max-height: 156px;
             margin-bottom: 40px;
+            @include mobile {
+                margin-bottom: 90px;
+            }
             .btittle {
                 font-family: $font-raleway;
                 color: $color-black;
                 line-height: 42px;
                 font-size: 2.25rem;
+                @include mobile {
+                    font-size: 3.25rem;
+                }
             }
             .btext {
                 color: $color-black;
@@ -41,13 +53,24 @@
                 position: relative;
                 z-index: 2;
             }
+            @include mobile {
+                margin: 30px 15px 60px 0;
+            }
         }
         .box-img1 {
             margin-right: 30px;
             margin-top: 120px;
+            @include mobile {
+                margin-right: -30px;
+                margin-top: 80px;
+                margin-bottom: 30px;
+            }
         }  
     }
     .box2 {
+        @include mobile {
+            flex-direction: column;
+        }
         .box-img2{
             margin-left: 40px;
         }
@@ -56,6 +79,11 @@
         display: flex;
         justify-content: space-between;
         width: 1124px;
+        @include mobile {
+            flex-direction: column;
+            width: 80%;
+            margin: 0px 5% 50px 5%;
+        }
         .box-texts3 {
             width: 623.04px;
             height: 370px;
@@ -63,18 +91,41 @@
             border-radius: 5px;
             border: #E8E9ED 1px solid;
             padding: 69px 34px 70px 36px;
+            @include mobile {
+                width: 100%;
+                height: auto;
+            }
+            .btittle {
+                font-family: $font-raleway;
+                color: $color-black;
+                line-height: 42px;
+                font-size: 2.25rem;
+                @include mobile {
+                    width: 100%;
+                    margin-bottom: 20px;
+                }
+            }
         }
         
         .box-img3 {
             background-color: $color-green;
             width: 440px;
-            /* height: 370px; */
+            height: 300px;
             display: flex;
             justify-content: center;
             align-items: center;
             margin-left: 60.96px;
             border-radius: 5px;
             border: #E8E9ED 1px solid;
+            @include mobile {
+                width: 100%;
+                margin-left: 0;
+                img {
+                    vertical-align: middle;
+                    transform: scale(1.5);
+                    margin-top: 68px;
+                }
+            }
         }
     } 
 }
@@ -82,7 +133,7 @@
 .btext1::after {
     content: "";
     height: 4px;
-    width: 327px;
+    width: 80%;
     background-color: $color-redish;
     display: block; 
     margin-top: 40px;
@@ -90,6 +141,9 @@
 .box1:hover .btext1::after {
     width: 527px;
     transition: 0.2s;
+    @include mobile {
+        width: 100%;
+    }
 }
 .box-img1::after {
     content: "";
@@ -113,13 +167,13 @@
 .btext2::after {
     content: "";
     height: 4px;
-    width: 327px;
+    width: 80%;
     background-color: $color-primary;
     display: block; 
     margin-top: 40px;
 }
 .box2:hover .btext2::after {
-    width: 427px;
+    width: 100%;
     transition: 0.2s;
 }
 .box-img2::after {
@@ -144,18 +198,18 @@
 .btext3::after {
     content: "";
     height: 4px;
-    width: 327px;
+    width: 80%;
     background-color: $color-green;
     display: block; 
     margin-top: 40px;
 }
 .box3:hover .btext3::after {
-    width: 527px;
+    width: 100%;
     transition: 0.2s;
 }
 
-.box3:hover .box-img3 {
-    margin-left: 0px;
-    width: 500px;
-    transition: 0.2s;
-}
+// .box3:hover .box-img3 {
+//     margin-left: 0px;
+//     width: 500px;
+//     transition: 0.2s;
+// }

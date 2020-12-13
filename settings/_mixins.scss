@@ -9,3 +9,10 @@
       @content;
     }
   }
+
+
+@mixin smallMobile {
+    @media (max-width: 415px) {
+      @content;
+    }
+  }

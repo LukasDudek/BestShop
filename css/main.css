@@ -528,13 +528,13 @@ body {
 }
 @media (max-width: 1352px) {
   .welcome-page .background {
-    height: 50%;
+    height: 60%;
     width: 100%;
   }
 }
 @media (max-width: 815px) {
   .welcome-page .background {
-    height: 40%;
+    height: 50%;
     width: 100%;
   }
 }
@@ -598,6 +598,11 @@ body {
   line-height: 42px;
   color: #000000;
   margin: 100px 0px;
+}
+@media (max-width: 1352px) {
+  .statistic .container .statistic_tittle {
+    margin: 20px 0px 100px;
+  }
 }
 @media (max-width: 815px) {
   .statistic .container .statistic_tittle {
@@ -696,7 +701,7 @@ body {
 
 .benefits {
   background-color: #F7F7F7;
-  height: 1395px;
+  height: auto;
   padding: 100px 0px 100px 0px;
   display: flex;
   flex-direction: column;
@@ -714,16 +719,34 @@ body {
   justify-content: space-between;
   padding: 37px;
 }
+@media (max-width: 815px) {
+  .benefits .box {
+    width: 80%;
+    height: 100%;
+    flex-direction: column-reverse;
+    margin: 0px 5% 50px 5%;
+  }
+}
 .benefits .box .box-texts {
   max-width: 416px;
   max-height: 156px;
   margin-bottom: 40px;
+}
+@media (max-width: 815px) {
+  .benefits .box .box-texts {
+    margin-bottom: 90px;
+  }
 }
 .benefits .box .box-texts .btittle {
   font-family: "Raleway", sans-serif;
   color: #000000;
   line-height: 42px;
   font-size: 2.25rem;
+}
+@media (max-width: 815px) {
+  .benefits .box .box-texts .btittle {
+    font-size: 3.25rem;
+  }
 }
 .benefits .box .box-texts .btext {
   color: #000000;
@@ -740,9 +763,26 @@ body {
   position: relative;
   z-index: 2;
 }
+@media (max-width: 815px) {
+  .benefits .box .box-img {
+    margin: 30px 15px 60px 0;
+  }
+}
 .benefits .box .box-img1 {
   margin-right: 30px;
   margin-top: 120px;
+}
+@media (max-width: 815px) {
+  .benefits .box .box-img1 {
+    margin-right: -30px;
+    margin-top: 80px;
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 815px) {
+  .benefits .box2 {
+    flex-direction: column;
+  }
 }
 .benefits .box2 .box-img2 {
   margin-left: 40px;
@@ -752,6 +792,13 @@ body {
   justify-content: space-between;
   width: 1124px;
 }
+@media (max-width: 815px) {
+  .benefits .box3 {
+    flex-direction: column;
+    width: 80%;
+    margin: 0px 5% 50px 5%;
+  }
+}
 .benefits .box3 .box-texts3 {
   width: 623.04px;
   height: 370px;
@@ -760,10 +807,28 @@ body {
   border: #E8E9ED 1px solid;
   padding: 69px 34px 70px 36px;
 }
+@media (max-width: 815px) {
+  .benefits .box3 .box-texts3 {
+    width: 100%;
+    height: auto;
+  }
+}
+.benefits .box3 .box-texts3 .btittle {
+  font-family: "Raleway", sans-serif;
+  color: #000000;
+  line-height: 42px;
+  font-size: 2.25rem;
+}
+@media (max-width: 815px) {
+  .benefits .box3 .box-texts3 .btittle {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
 .benefits .box3 .box-img3 {
   background-color: #55DFB4;
   width: 440px;
-  /* height: 370px; */
+  height: 300px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -771,11 +836,22 @@ body {
   border-radius: 5px;
   border: #E8E9ED 1px solid;
 }
+@media (max-width: 815px) {
+  .benefits .box3 .box-img3 {
+    width: 100%;
+    margin-left: 0;
+  }
+  .benefits .box3 .box-img3 img {
+    vertical-align: middle;
+    transform: scale(1.5);
+    margin-top: 68px;
+  }
+}
 
 .btext1::after {
   content: "";
   height: 4px;
-  width: 327px;
+  width: 80%;
   background-color: #FB3B64;
   display: block;
   margin-top: 40px;
@@ -784,6 +860,11 @@ body {
 .box1:hover .btext1::after {
   width: 527px;
   transition: 0.2s;
+}
+@media (max-width: 815px) {
+  .box1:hover .btext1::after {
+    width: 100%;
+  }
 }
 
 .box-img1::after {
@@ -810,14 +891,14 @@ body {
 .btext2::after {
   content: "";
   height: 4px;
-  width: 327px;
+  width: 80%;
   background-color: #08A6E4;
   display: block;
   margin-top: 40px;
 }
 
 .box2:hover .btext2::after {
-  width: 427px;
+  width: 100%;
   transition: 0.2s;
 }
 
@@ -845,20 +926,14 @@ body {
 .btext3::after {
   content: "";
   height: 4px;
-  width: 327px;
+  width: 80%;
   background-color: #55DFB4;
   display: block;
   margin-top: 40px;
 }
 
 .box3:hover .btext3::after {
-  width: 527px;
-  transition: 0.2s;
-}
-
-.box3:hover .box-img3 {
-  margin-left: 0px;
-  width: 500px;
+  width: 100%;
   transition: 0.2s;
 }
 
@@ -866,37 +941,66 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 150px;
+  margin-bottom: 1%;
+}
+@media (max-width: 815px) {
+  .pricing {
+    margin-bottom: 5%;
+  }
 }
 .pricing .container-price {
   width: 1266px;
   height: 616px;
   margin-top: 100px;
   display: flex;
-  justify-content: space-between;
   flex-direction: column;
 }
+@media (max-width: 815px) {
+  .pricing .container-price {
+    width: 80%;
+    height: auto;
+  }
+}
 .pricing .container-price .pricing-main-tittle {
-  font-size: 2.25rem;
+  font-size: 3.8rem;
   font-family: "Raleway", sans-serif;
   color: #000000;
   line-height: 42px;
   text-align: center;
   margin-bottom: 50px;
 }
+@media (max-width: 815px) {
+  .pricing .container-price .pricing-main-tittle {
+    font-size: 4.25rem;
+  }
+}
 .pricing .container-price .price-blocks {
   display: flex;
   justify-content: space-evenly;
 }
+@media (max-width: 815px) {
+  .pricing .container-price .price-blocks {
+    align-items: center;
+    flex-direction: column;
+  }
+}
 .pricing .container-price .price-blocks .basic, .pricing .container-price .price-blocks .profesional, .pricing .container-price .price-blocks .premium {
-  width: 372px;
-  height: 461px;
+  width: 80%;
+  height: auto;
   border: #FB3B64 1px solid;
   border-radius: 18px;
   display: flex;
-  justify-content: space-between;
   flex-direction: column;
   align-items: center;
+  margin-right: 10%;
+}
+@media (max-width: 815px) {
+  .pricing .container-price .price-blocks .basic, .pricing .container-price .price-blocks .profesional, .pricing .container-price .price-blocks .premium {
+    margin-right: 0;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-bottom: 20%;
+  }
 }
 .pricing .container-price .price-blocks .profesional {
   border: #08A6E4 1px solid;
@@ -906,42 +1010,94 @@ body {
 }
 .pricing .container-price .price-blocks .profesional .begin-btn2 {
   background-color: #07ACE6;
+  position: relative;
+  top: 38px;
+  left: 12px;
+}
+@media (max-width: 815px) {
+  .pricing .container-price .price-blocks .profesional .begin-btn2 {
+    top: 7px;
+    left: -88px;
+  }
 }
 .pricing .container-price .price-blocks .premium {
   border: #55DFB4 1px solid;
+  margin-right: 0;
 }
 .pricing .container-price .price-blocks .premium .price3 {
   color: #55DFB4;
 }
 .pricing .container-price .price-blocks .premium .begin-btn3 {
   background-color: #55DFB4;
+  position: relative;
+  top: 31px;
+  left: 14px;
+}
+@media (max-width: 815px) {
+  .pricing .container-price .price-blocks .premium .begin-btn3 {
+    top: 10px;
+    left: -68px;
+  }
+}
+
+.price-content {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 6%;
+}
+
+.offerrs {
+  height: auto;
+}
+.offerrs p {
+  margin-bottom: 15%;
+  font-size: 1.3rem;
+}
+.offerrs p img {
+  transform: scale(1.7);
+  margin-bottom: 2%;
 }
 
 .tittle-block {
   margin-top: 34px;
-  font-size: 1.25rem;
-  line-height: 1px;
+  font-size: 2rem;
+  line-height: normal;
   font-family: "Raleway", sans-serif;
   font-weight: bold;
+}
+@media (max-width: 815px) {
+  .tittle-block {
+    margin-top: 0;
+    font-size: 1.7rem;
+  }
 }
 
 .price {
   margin-top: 14px;
   color: #FB3B64;
-  font-size: 2.875rem;
-  line-height: 2px;
+  font-size: 3.875rem;
+  line-height: normal;
+}
+@media (max-width: 815px) {
+  .price {
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
 }
 
 .limited-offer {
   font-family: "Raleway", sans-serif;
-  font-size: 0.75rem;
+  font-size: 1.2rem;
   line-height: 1px;
   font-weight: bold;
   margin-top: 5px;
 }
 
 .HDD {
-  margin-top: 69px;
+  margin-top: 25px;
 }
 
 .HDD2 {
@@ -953,9 +1109,16 @@ body {
   padding: 16px 57px;
   color: #ffffff;
   background-color: #EB476E;
-  position: relative;
-  bottom: -25px;
   text-decoration: none;
+  position: relative;
+  top: 23px;
+  left: 5px;
+}
+@media (max-width: 815px) {
+  .begin-btn {
+    top: 6px;
+    left: -41px;
+  }
 }
 
 .basic:hover {

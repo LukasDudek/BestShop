@@ -16,6 +16,9 @@
             line-height: 42px;
             color: $color-black;
             margin: 100px 0px;
+            @include notebook {
+               margin: 20px 0px 100px;
+            }
             @include mobile {
                 margin-top: 10px;
                 margin-bottom: 50px;

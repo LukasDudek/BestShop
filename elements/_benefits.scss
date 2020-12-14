@@ -20,7 +20,7 @@
             width: 80%;
             height: auto;
         }
-        @include mobile {
+        @include smallnotebook {
             width: 80%;
             height: 100%;
             flex-direction: column-reverse;
@@ -31,18 +31,22 @@
             max-height: 156px;
             margin-bottom: 40px;
             @include notebook {
-                max-width: 100%;
+                width: 50%;
                 max-height: 100%;
             }
-            @include mobile {
+            @include smallnotebook {
                 margin-bottom: 90px;
+                width: 100%;
             }
             .btittle {
                 font-family: $font-raleway;
                 color: $color-black;
                 line-height: 42px;
                 font-size: 2.25rem;
-                @include mobile {
+                // @include smallnotebook {
+                //     font-size: 3.25rem;
+                // }
+                @include smallnotebook {
                     font-size: 3.25rem;
                 }
             }
@@ -60,15 +64,19 @@
             img {
                 position: relative;
                 z-index: 2;
+                width: 100%;
             }
-            @include mobile {
+            @include smallnotebook {
                 margin: 30px 15px 60px 0;
             }
         }
         .box-img1 {
             margin-right: 30px;
             margin-top: 120px;
-            @include mobile {
+            // @include notebook {
+            //     margin-right: 73px;
+            // }
+            @include smallnotebook {
                 margin-right: -30px;
                 margin-top: 80px;
                 margin-bottom: 30px;
@@ -76,7 +84,7 @@
         }  
     }
     .box2 {
-        @include mobile {
+        @include smallnotebook {
             flex-direction: column;
         }
         .box-img2{
@@ -90,14 +98,14 @@
         @include notebook {
             width: 80%;
         }
-        @include mobile {
+        @include smallnotebook {
             flex-direction: column;
             width: 80%;
             margin: 0px 5% 50px 5%;
         }
         .box-texts3 {
             width: 623.04px;
-            height: 370px;
+            height: auto;
             background-color: $color-white;
             border-radius: 5px;
             border: #E8E9ED 1px solid;
@@ -106,16 +114,14 @@
                 width: 100%;
                 height: auto;
             }
-            @include mobile {
-                width: 100%;
-                height: auto;
-            }
+            
             .btittle {
                 font-family: $font-raleway;
                 color: $color-black;
                 line-height: 42px;
                 font-size: 2.25rem;
-                @include mobile {
+                margin-bottom: 40px;
+                @include smallnotebook {
                     width: 100%;
                     margin-bottom: 20px;
                 }
@@ -131,12 +137,15 @@
             margin-left: 60.96px;
             border-radius: 5px;
             border: #E8E9ED 1px solid;
-            @include mobile {
+            img {
+                transform: scale(0.7);
+            }
+            @include smallnotebook {
                 width: 100%;
                 margin-left: 0;
                 img {
                     vertical-align: middle;
-                    transform: scale(1.5);
+                    transform: scale(1.1);
                     margin-top: 68px;
                 }
             }
@@ -153,11 +162,8 @@
     margin-top: 40px;
 }
 .box1:hover .btext1::after {
-    width: 527px;
+    width: 100%;
     transition: 0.2s;
-    @include mobile {
-        width: 100%;
-    }
 }
 .box-img1::after {
     content: "";

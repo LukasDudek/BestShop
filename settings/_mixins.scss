@@ -16,3 +16,8 @@
       @content;
     }
   }
+  @mixin smallnotebook {
+    @media (max-width: 985px) {
+      @content;
+    }
+  }

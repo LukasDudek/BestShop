@@ -11,6 +11,9 @@
         height: 376px;
         margin-bottom: 59px;
         display: flex;
+        @include notebook {
+            width: 87%;
+        }
         @include mobile {
             width: 80%;
             height: auto;

@@ -20,8 +20,11 @@
                margin: 20px 0px 100px;
             }
             @include mobile {
-                margin-top: 10px;
-                margin-bottom: 50px;
+               margin-top: 10px;
+               margin-bottom: 50px;
+               width: 70%;
+               font-size: 3.25rem;
+               line-height: 3.5rem;
             }
         }
         
@@ -52,13 +55,20 @@
             width: 60px;
             height: 60px;
             border-radius: 50%;
-            background-color: $color-redish;  
+            background-color: $color-green;  
         }
         .circle_person {
             background-color: $color-redish;
             position: absolute;
             top: 0px;
             left: 4px;
+         }
+         .circle_eye {
+            background-color: $color-primary;
+            position: absolute;
+            top: -3px;
+            left: 12px;
+            
          }
          .svg_stat { /* wycentrowanie samego svg */
             display: block;
@@ -100,13 +110,7 @@
 
 
 
-.circle_eye {
-   background-color: $color-primary;
-   position: absolute;
-   top: -3px;
-   left: 12px;
-   
-}
+
 .circle_catalog {
    background-color: $color-green;
    position: absolute;

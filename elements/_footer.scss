@@ -7,6 +7,9 @@
         justify-content: space-between;
         align-items: center;
         height: 89px;
+        @include mobile {
+            width: 80%;
+        }
         .logo-box-footer {
             .logo-footer {
                 font-size: 1.625rem;

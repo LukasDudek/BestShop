@@ -3,6 +3,9 @@
     justify-content: center;
     align-items: center;
     margin-bottom: 1%;
+    @include notebook {
+        margin-bottom: 5%;
+    }
     @include mobile {
         margin-bottom: 5%;
     }
@@ -12,6 +15,10 @@
         margin-top: 100px;
         display: flex;
         flex-direction: column;
+        @include notebook {
+            width: 80%;
+            height: auto;
+        }
         @include mobile {
             width: 80%;
             height: auto;
@@ -23,6 +30,9 @@
             line-height: 42px;
             text-align: center;
             margin-bottom: 50px;
+            @include notebook {
+                font-size: 4.25rem;
+            }
             @include mobile {
                 font-size: 4.25rem;
             }
@@ -30,6 +40,10 @@
         .price-blocks {
             display: flex;
             justify-content: space-evenly;
+            @include notebook {
+                align-items: center;
+                flex-direction: column;
+            }
             @include mobile {
                 align-items: center;
                 flex-direction: column;
@@ -44,6 +58,12 @@
                 flex-direction: column;
                 align-items: center;
                 margin-right: 10%;
+                @include notebook {
+                    margin-right: 0;
+                    flex-direction: row;
+                    justify-content: space-evenly;
+                    margin-bottom: 20%;
+                }
                 @include mobile {
                     margin-right: 0;
                     flex-direction: row;
@@ -61,6 +81,10 @@
                     position: relative;
                     top: 17px;
                     left: 12px;
+                    @include notebook {
+                        top: 11px;
+                        left: -100px;
+                    }
                     @include mobile {
                         top: 7px;
                         left: -88px;
@@ -78,6 +102,10 @@
                     position: relative;
                     top: 9px;
                     left: 14px;
+                    @include notebook {
+                        top: 11px;
+                        left: -100px;
+                    }
                     @include mobile {
                         top: 10px;
                         left: -82px;
@@ -94,6 +122,10 @@
     justify-content: space-between;
     align-items: center;
     margin-bottom: 6%;
+    @include notebook {
+        margin-right: 5%;
+        width: 50%;
+    }
     @include mobile {
         margin-right: 5%;
         width: 50%;
@@ -101,12 +133,19 @@
 }
 .offerrs {
     height: auto;
+    @include notebook {
+        width: 50%;
+    }
     @include mobile {
         width: 50%;
     }
     p {
         margin-bottom: 15%;
         font-size: 1.3rem;
+        @include notebook {
+            font-size: 2.0rem;
+        }
+
         img {
             transform: scale(1.7);
             margin-bottom: 2%;
@@ -119,6 +158,10 @@
     line-height: normal;
     font-family: $font-raleway;
     font-weight: bold;
+    @include notebook {
+        margin-top: 0;
+        font-size: 1.7rem;
+    }
     @include mobile {
         margin-top: 0;
         font-size: 1.7rem;
@@ -129,6 +172,11 @@
     color: #FB3B64;
     font-size: 3.875rem;
     line-height: normal;
+    @include notebook {
+        font-size: 6rem;
+        margin-top: 0;
+        margin-bottom: 10px;
+    }
     @include mobile {
         margin-top: 0;
         margin-bottom: 10px;
@@ -156,6 +204,10 @@
     position: relative;
     top: 15px;
     left: 5px;
+    @include notebook {
+        top: 10px;
+        left: -104px;
+    }
     @include mobile {
         top: 6px;
         left: -82px;
